@@ -9,7 +9,7 @@ This project analyzes my personal YouTube watch history from late-July to Octobe
 The results were visualized in Tableau to explore trends such as how my viewing habits changed across months, which weekdays I watched most often, and what times of day I was most active on YouTube.
 
 ## How was the data preprocessed?
-The raw YouTube watch history JSON file from Google Takeout was loaded in Python and cleaned using pandas. Only key fields such as the channel name, date, and time were extracted. Since I was based in the UK (UTC+1) before late-August 2024 and in Malaysia (UTC+8) afterward, timestamps were converted accordingly and split into separate date and time columns before being saved as a CSV file for analysis.
+The raw YouTube watch history JSON file from Google Takeout was loaded in Python and cleaned using pandas. Only key fields such as the channel name, date, and time were extracted. Since I was based in the UK (UTC+1) before late-August 2024 and in Malaysia (UTC+8) afterward, timestamps were converted accordingly and split into separate date and time columns before being saved as a CSV file for analysis. As I had Youtube Premium, I did not need to remove the ads from my Youtube watch history.
 
 ## Findings from the analysis
 ![Videos watched per month](dashboard_pictures/videos_watched_per_month.png)
